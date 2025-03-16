@@ -1,7 +1,7 @@
 # Tappy Bird Game
 
 ## Description
-Tappy Bird is a fun and challenging game inspired by the classic Flappy Bird. The goal of the game is to control a bird and navigate through pipes by tapping on the screen (or pressing the spacebar on desktop). The game tracks the score based on how many pipes the bird successfully navigates through. The game also includes background music, sound effects, and a timer for the gameplay duration.
+Tappy Bird is a fun and challenging game inspired by the classic Flappy Bird. The goal of the game is to control a bird and navigate through pipes by tapping on the screen or pressing the spacebar. The game tracks the score based on how many pipes the bird successfully navigates through. The game also includes background music, sound effects, and a timer for the gameplay duration.
 
 ## Features
 - **Score tracking**: Displays the score as you avoid pipes.
@@ -11,7 +11,6 @@ Tappy Bird is a fun and challenging game inspired by the classic Flappy Bird. Th
 - **Instructions**: A popup appears when you first open the game, explaining the controls.
 
 ## Controls
-- **Mobile**: Tap on the screen to make the bird fly.
 - **Desktop**: Press the `Space` bar to make the bird fly.
 - **Pause/Resume**: Press the `P` key to pause or resume the game.
 
