@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #000;
+    text-align: center;
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+  
+#gameCanvas {
+    border: 2px solid white;
+    background-color: #87CEEB;
+}
+  
+button {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    transition: all 0.3s ease;
+}
+  
+button:hover {
+    background-color: orange;
+}
+
+#startButton {
+    position: absolute;
+    top: 70%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: yellow;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#restartButton {
+    position: absolute;
+    top: 70%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: yellow;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 10;
+    display: none; 
+}
+
+#instructionDot {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 100px;
+    height: 40px;
+    background-color: yellow;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#instructionLabel {
+    color: black;
+    font-family: 'Press Start 2P' cursive;
+    font-size: 8px;
+}
+
+.popup {
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 80%;
+    max-width: 400px;
+    color: #000;
+    font-family: monospace;
+}
+  
+.close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #dc1d1d;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+  
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+p {
+    font-size: 16px;
+} 

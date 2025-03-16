@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tappy Bird Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="gameTitle">Tappy Bird</h1>
+  
+  <div id="instructionDot">
+    <span id="instructionLabel">Instructions</span>
+  </div>
+  
+  <div id="howToPlayPopup" class="popup">
+    
+    <div class="popup-content">
+      <span id="closePopup" class="close-btn">X</span>
+      <h2>How to Play Tappy Bird:</h2>
+      <p>Tap on the screen (or press Space on desktop) to make the bird fly upwards.</p>
+      <p>Avoid the pipes and try to score as many points as possible!</p>
+      <p>Enjoy the game!</p>
+    </div>
+  </div>  
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+  
+  <button id="startButton">Start</button>
+
+  <button id="restartButton" style="display: none;">Restart</button>
+
+  <script src="game.js"></script>
+</body>
+</html>
