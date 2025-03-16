@@ -12,7 +12,6 @@ Tappy Bird is a fun and challenging game inspired by the classic Flappy Bird. Th
 
 ## Controls
 - **Desktop**: Press the `Space` bar to make the bird fly.
-- **Pause/Resume**: Press the `P` key to pause or resume the game.
 
 ## Installation
 
