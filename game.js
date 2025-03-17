@@ -201,9 +201,16 @@ window.onload = function () {
     }
   });
 
-  window.addEventListener('touchstart', function () {
-    popup.style.display = 'none';
-  });
+  // Add touch event listeners to prevent screen zoom and resizing
+  document.body.addEventListener('touchstart', (e) => {
+    e.preventDefault();  // Prevent default touch behavior (zooming, scrolling, etc.)
+  }, { passive: false });  // Ensure it is not passive so we can call preventDefault
+
+// Tapping to make the bird fly on mobile
+  window.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    flap();  // Call the flap function when the screen is tapped
+  }, { passive: false });  // Add passive: false so preventDefault() can be used
 };
 
 window.addEventListener('keydown', (e) => {
@@ -213,6 +220,8 @@ window.addEventListener('keydown', (e) => {
 });
 
 document.getElementById('restartButton').addEventListener('click', startGame);
+
+
 document.getElementById('startButton').addEventListener('click', startGame);
 
 instructionDot.addEventListener('click', function () {
@@ -228,6 +237,11 @@ window.addEventListener('keydown', (e) => {
     flap();
   }
 });
+
+window.addEventListener('click', flap);
+
+setInterval(generatePipes, 2000);
+
 
 window.addEventListener('click', flap);
 
